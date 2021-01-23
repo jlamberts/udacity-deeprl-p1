@@ -27,8 +27,8 @@ You can find the instructions for installing miniconda and creating an environme
 [conda docs](https://docs.conda.io/en/latest/miniconda.html).
 
 ### Python Dependencies
-After creating and activating your environment (if you're using one), you can install the python dependencies with
-the command `pip install -r requirements.txt`.
+After creating and activating your environment (if you're using one), you should install the dependencies for this project
+by following the instructions in the [Udacity DRLND Repository.](https://github.com/udacity/deep-reinforcement-learning#dependencies)
 
 
 ### Unity environment
@@ -39,7 +39,8 @@ your operating system.  Links for each operating system can be found below:
 * [Mac Os](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana.app.zip)
 * [Windows 32 bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86.zip)
 * [Windows 64 bit](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P1/Banana/Banana_Windows_x86_64.zip)
-After downloading, use 7zip or another archive tool to extract the environment file into the `unity_env` directory.
+
+After downloading, use 7zip or another archive tool to extract the environment file into the root project directory.
 By default, the code is set up to look for the Mac OS version of the environment, so you will need to modify the
 UNITY_ENV_PATH variable in `run_experiments.py` or `run_agent.py` to point to your new version.
 
@@ -47,8 +48,8 @@ UNITY_ENV_PATH variable in `run_experiments.py` or `run_agent.py` to point to yo
 The experiment runner, `navigation.experiment.run_and_save_experiment`, accepts dictionaries of keyword args which
 modify behavior at the experiment level (number of epochs, epsilon decay rate, etc.) as well as behavior on the agent
 level (type of network used, size of hidden layer, double DQN vs "vanilla" Q-value calculations).  By default, the file
-`run_experiments.py` is configured to run 6 experiments and write the results to the `experiments` folder.  You can modify
-the `EXPERIMENT_SETUPS` dictionary at the top of the file to adjust the experiment setups if you'd like to compare
+`run_experiments.py` is configured to run 5 experiments and write the results to the `experiments` folder.  You can modify
+the `EXPERIMENT_SETUPS` list at the top of the file to adjust the experiment setups if you'd like to compare
 different setups.  
 
 To run the default experiments, navigate to the root of the project and run the command `python run_experiments.py`.
